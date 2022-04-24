@@ -15,7 +15,28 @@ let router =  new VueRouter({
     },
     {
       path:'/home',
-      component:() => import('@/views/Home/index.vue')
+      component:() => import('@/views/Home/index.vue'),
+      meta:{isShown:false}
+    },
+    {
+      path:'/technology',
+      component:() => import('@/views/Technology/index.vue'),
+      meta:{isShown:true}
+    },
+    {
+      path:'/personal',
+      component:() => import('@/views/Personal/index.vue'),
+      meta:{isShown:true}
+    },
+    {
+      path:'/news',
+      component:() => import('@/views/News/index.vue'),
+      meta:{isShown:true}
+    },
+    {
+      path:'/about',
+      component:() => import('@/views/About/index.vue'),
+      meta:{isShown:true}
     }
   ],
   scrollBehavior() {

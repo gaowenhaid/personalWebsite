@@ -22,6 +22,12 @@ module.exports = {
         changeOrigin: true,
         pathRewrite: {"^/apis" : ""}
       },
+      '^/api': {
+        target: 'https://yuanxiapi.cn',
+        ws: true,
+        changeOrigin: true,
+        pathRewrite: {"^/api" : "/api"}
+      },
       
     }
   },

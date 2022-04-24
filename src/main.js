@@ -12,6 +12,11 @@ import "nprogress/nprogress.css";
 import store from './store/index.js'
 import "swiper/swiper.min.css";
 Vue.use(ElementUI);
+
+import VueParticles from 'vue-particles'  
+Vue.use(VueParticles)
+import AudioPlayer from '@liripeng/vue-audio-player'
+Vue.use(AudioPlayer)
 import './assets/style.css'
 Vue.config.productionTip = false
 import router from './router/index'

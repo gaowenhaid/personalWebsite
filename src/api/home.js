@@ -12,3 +12,9 @@ export const getHomeImage = () => {
     methods:'get',
   })
 }
+export const getMusic = () => {
+  return axios({
+    url:'/api/NetEaseCloudmusic/?sort=热歌榜&format=json',
+    methods:'get',
+  })
+}
